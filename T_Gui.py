@@ -27,8 +27,8 @@ count_req_Lab.place(x= 350, y = 30)
 but_img_day = Button(window, text = "Получить картинку дня", font=("Ariel Bold", 10), width = 20, command = get_img)
 but_img_day.place(x = 160, y = 100)
 #Получить список околоземных астеройдов
-but_list_astr = Button(window, text = "Получить список околоземных астеройдов", width = 20, command = get_list_astr)
-but_list_astr.place(x = 160, y = 150)
+but_list_astr = Button(window, text = "Получить список околоземных астеройдов",  width = 35, command = get_list_astr)
+but_list_astr.place(x = 130, y = 150)
 
 window.mainloop()
 
