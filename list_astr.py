@@ -1,14 +1,14 @@
-import main
+import data
 import T_list_astr
 
 URL = "https://api.nasa.gov/neo/rest/v1/feed"
 
 
 def run():
-    zap = main.requests.get(URL, main.params)
-    count = zap.headers['X-RateLimit-Remaining']
-    main.count_req = count
-    text = main.json.loads(zap.text)
+    request = data.requests.get(URL, data.params)
+    count = request.headers['X-RateLimit-Remaining']
+    data.count_req = count
+    text = data.json.loads(request.text)
     list_astr = text['near_earth_objects']['2020-08-18']
     l_astr = ""
     for i in range(len(list_astr)):

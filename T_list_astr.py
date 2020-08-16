@@ -10,7 +10,6 @@ class show_astr():
     def show(self, l_astr):
         list_astr = Label(self.wind_list, text=l_astr)
         list_astr.grid(column=0, row=0)
-        #list_astr.configure(text = l_astr)
 
 
 
